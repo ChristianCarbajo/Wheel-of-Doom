@@ -1,0 +1,408 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: '3 theHard';
+    src: url(/fonts/3\ theHard\ way\ RMX.ttf);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+/********************************
+***           MAIN            ***
+********************************/
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    font-family: '3 theHard';
+    width: 100%;
+    height: 100%;
+}
+
+/* Background
+========================================================= */
+.background {
+    position: fixed;
+    z-index: -100;
+
+}
+
+.background img:nth-child(1) {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Machine Space
+========================================================= */
+
+.machine {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.machinePhoto {
+    height: 100%;
+}
+
+.machinePhoto img:nth-child(1) {
+    height: 100%;
+}
+
+.juego {
+    z-index: -1;
+    transform: translateY(-55.5vh);
+    height: 38.5%;
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juego img:first-child {
+    height: 100%;
+    z-index: -1;
+}
+
+.members_avatar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.printMuerto {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    opacity: 1;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #841010;
+    font-size: 4.5vh;
+}
+
+.EndButton {
+    -webkit-text-stroke: 0;
+    margin-top: 1vh;
+    width: 10vw;
+    height: 3.5vh;
+    background-color: #FFF;
+    z-index: 2;
+
+}
+
+.avatares {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+}
+
+.avatares-img {
+    height: 100%;
+}
+
+.avatares-p {
+    -webkit-text-stroke: 1px #ffffff;
+    font-family: 'arial';
+    text-transform: uppercase;
+    font-size: 1.5vh;
+    font-weight: 800;
+
+}
+
+.splash {
+    position: fixed;
+    opacity: 0.7;
+
+}
+
+/* List coders
+========================================================= */
+
+.coders {
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 20%;
+    height: auto;
+    color: rgb(142, 142, 142);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4vh;
+}
+
+/* List death
+========================================================= */
+
+.death {
+    margin-top: 15%;
+    margin-right: 5%;
+    width: 20%;
+    height: auto;
+    color: #841010;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4vh;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px #841010, 0 0 1em rgb(234, 234, 255), 0 0 0.2em rgb(177, 177, 177);
+    margin-bottom: 10%;
+    font-size: 3vh;
+}
+
+ul {
+    font-size: 2vh;
+    list-style: none;
+}
+
+/* Buttons
+========================================================= */
+
+.buttons {
+    transform: translateY(-51vh);
+    display: flex;
+    width: 32%;
+}
+
+.buttonRed {
+    display: block;
+    width: 100%;
+    margin-right: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonRedPress {
+    display: none;
+    width: 100%;
+    margin-right: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonWhite {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonWhitePress {
+    display: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonRed img {
+    -webkit-user-drag: none;
+}
+
+
+/********************************
+***           POPUP           ***
+********************************/
+
+#overlay {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+}
+
+#overlay h2 {
+    margin: 0;
+    text-align: center;
+}
+
+
+#popupBody {
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+}
+
+.popupContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#box {
+    align-items: center;
+    text-align: center;
+    padding: 1.6vh 1.6vh 1.6vh;
+    margin-bottom: 4.8vh;
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.playWith {
+    font-family: '3 theHard';
+}
+
+.copy {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(45deg, black, grey, rgb(255, 70, 42));
+    height: 3vw;
+    padding-left: 12vh;
+}
+
+/********************************
+***           VIDEO           ***
+********************************/
+
+.video {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+video {
+    width: 100%;
+    z-index: -1;
+}
+
+.audio {
+    position: absolute;
+}
+
+.press {
+    font-family: 'Arial';
+    font-size: 100%;
+    text-shadow: 1px 1px 2px #841010, 0 0 1em rgb(234, 234, 255), 0 0 0.2em rgb(177, 177, 177);
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+
+.buttonIntro {
+    transform: translateY(-25vh);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.press a {
+    color: #841010;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+
+.audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    width: 6vh;
+    position: relative;
+    top: 4vh;
+    left: 4vh;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #1b1b1be0;
+    z-index: 1;
+}
+
+.audio-line {
+    height: 0.5vh;
+    width: 95%;
+    background-color: #841010;
+    position: absolute;
+    top: 48%;
+    transform: rotate(45deg);
+}
+
+.audio img {
+    height: 80%;
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .coders {
+        display: none;
+    }
+
+    .death {
+        display: none;
+    }
+}

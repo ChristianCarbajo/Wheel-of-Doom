@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div id="overlay">
+        <div id="popupBody">
+            <h2>Ingresa el nombre de los Coders</h2>
+            <a id="cerrar">&times;</a>
+            <div class="popupContent">
+                <p class="playWith">Vamos a jugar a un juego</p>  
+                <input type="text" id="box" placeholder="Coder's name" size="30">
+                <button type="button" id="button_añadir" style='width:90px; height:25px'>Añadir</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="main">
+        <div class="splash"></div>
+        <div class="background">
+            <img src="/images/Background.png" alt="">
+        </div>
+        <div class="coders" >
+            <h2>CODERS</h2>
+            <ul Id="coders-list"></ul>
+        </div>
+
+        <div class="machine">
+            <div class="machinePhoto">
+                <img src="/images/maquina-cortada.png" alt="">
+            </div>
+            <div class="juego">
+                <img src="/images/South-Park-The-Stick-Of-Truth-South-Park-screen-shot-1172964.jpg" alt="">
+                <div id="members" class="members_avatar"></div>
+                <div class="printMuerto"><p></p></div>
+            </div>
+            <div class="buttons">
+                <button class="buttonRed" id="button1"><img src="/images/bottonRojo.svg"></button>
+                <button class="buttonRedPress" id="button1"><img src="/images/ButtonRedPress.svg"></button>
+                <button class="buttonWhite" id="button1"> <img src="/images/bottonBlanco.svg"> </button>
+                <button class="buttonWhitePress" id="button1"> <img src="/images/ButtonWhitePress.svg"> </button>
+            </div>
+        </div>
+
+        <div class="death">
+            <h2>MUERTOS</h2>
+            <ul id="death"><ul>
+    
+    </section> 
+
+    <div class="contents" id="content"></div>
+
+    <footer>
+        <div class="copy">
+            <p>&copy; 2022 The Coders Sacrifice</p>
+        </div>
+    </footer>
+</body>
+    <script type="text/javascript" src="CodersScript.js"></script>
+</html>
